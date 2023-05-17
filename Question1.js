@@ -3,7 +3,7 @@
 
 
 const MongoClient = require('mongodb').MongoClient;
-require('dotenv').config(); // Load environment variables from .env file
+require('dotenv').config(); 
 
 async function findDocuments() {
   const uri = process.env.MONGODB_URI; 
