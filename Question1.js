@@ -12,7 +12,7 @@ async function findDocuments() {
   try {
     await client.connect();
 
-    const database = client.db(process.env.DB_NAME); // Use environment variable for the database name
+    const database = client.db(process.env.DB_NAME); 
     const collection = database.collection(process.env.COLLECTION_NAME); 
 
     const fieldName = process.env.FIELD_NAME; 
